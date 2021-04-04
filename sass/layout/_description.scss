@@ -7,9 +7,9 @@
 }
 .description-item {
   width: 270px;
-}
-.description-item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .container-icon {
   display: flex;

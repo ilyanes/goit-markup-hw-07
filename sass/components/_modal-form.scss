@@ -29,13 +29,10 @@
   border-radius: 4px;
   padding-left: 42px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-form-input:focus {
-  border-color: var(--accent-color);
-  outline: none;
-}
-.modal-form-input:focus + .modal-form-icon {
-  fill: var(--accent-color);
+  &:focus {
+    border-color: var(--accent-color);
+    outline: none;
+  }
 }
 .modal-icon {
   fill: var(--black-color);
@@ -51,6 +48,9 @@
   height: 18px;
   fill: var(--main-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .modal-form-input:focus + & {
+    fill: var(--accent-color);
+  }
 }
 .modal-form-message {
   width: 100%;
@@ -61,13 +61,13 @@
   padding: 12px 16px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-top: 4px;
-}
-.modal-form-message:focus {
-  border-color: var(--accent-color);
-  outline: none;
-}
-.modal-form-message::placeholder {
-  color: rgba(117, 117, 117, 0.5);
+  &:focus {
+    border-color: var(--accent-color);
+    outline: none;
+  }
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 .modal-form-check-desc {
   display: flex;
@@ -78,22 +78,22 @@
   color: var(--secondary-color);
   margin-top: 10px;
   margin-bottom: 30px;
-}
-.modal-form-check-desc::before {
-  display: block;
-  content: '';
-  width: 16px;
-  height: 15px;
-  border: 1px solid #212121;
-  cursor: pointer;
-  margin-right: 8px;
-}
-.modal-form-term:checked + .modal-form-check-desc::before {
-  background-image: url(../images/check.svg);
-  background-position: center;
-}
-.modal-form-term:focus + .modal-form-check-desc::before {
-  box-shadow: 0 0 0 2px var(--accent-color);
+  &::before {
+    display: block;
+    content: '';
+    width: 16px;
+    height: 15px;
+    border: 1px solid #212121;
+    cursor: pointer;
+    margin-right: 8px;
+    .modal-form-term:checked + & {
+      background-image: url(../images/check.svg);
+      background-position: center;
+    }
+    .modal-form-term:focus + & {
+      box-shadow: 0 0 0 2px var(--accent-color);
+    }
+  }
 }
 .modal-form-btn {
   font-weight: 700;
