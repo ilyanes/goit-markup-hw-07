@@ -10,7 +10,7 @@
   margin-left: -30px;
   margin-top: -30px;
 }
-.gallery-item {
+.gallery-list__item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
@@ -18,7 +18,7 @@
 .gallery-list-overlay {
   position: relative;
 }
-.gallery-overlay {
+.gallery-list__title {
   position: absolute;
   bottom: 0;
   left: 0;

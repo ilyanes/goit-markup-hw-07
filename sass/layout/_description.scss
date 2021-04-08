@@ -5,7 +5,7 @@
 .description-list {
   display: flex;
 }
-.description-item {
+.description-list__item {
   width: 270px;
   &:not(:last-child) {
     margin-right: 30px;
@@ -20,7 +20,7 @@
   align-items: center;
   margin-bottom: 30px;
 }
-.description-title {
+.description-list__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -28,7 +28,7 @@
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.description-text {
+.description-list__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;

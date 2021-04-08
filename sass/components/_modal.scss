@@ -11,7 +11,7 @@
   border-radius: 4px;
   padding: 40px;
 }
-.modal-close-btn {
+.modal__close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -26,8 +26,8 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
-.modal-close-btn:hover .modal-icon,
-.modal-close-btn:focus .modal-icon {
+.modal__close-btn:hover .modal__icon,
+.modal__close-btn:focus .modal__icon {
   fill: var(--accent-color);
 }
 .is-hidden {
